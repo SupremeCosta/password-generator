@@ -54,7 +54,7 @@ function generatePassword() {
   password = password.join("");
 
   // Return the generated password
-
+  return password;
 }
 
 // Add event listener to generate button
