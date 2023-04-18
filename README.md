@@ -18,7 +18,9 @@
 
   <h2 id="visuals">Visuals</h2>
   <p>Here's a screenshot of the password generator interface:</p>
-  <img src="password-generator-screenshot.png" alt="Password Generator Screenshot">
+  <img src="./Password Generator 1.png" alt="Password Generator Screenshot">
+  <img src="./Password Generator 2.png" alt="Password Generator Screenshot">
+  <img src="./Password Generator 3.png" alt="Password Generator Screenshot">
 
   <h2 id="contributing">Contributing</h2>
   <p>Contributions to the password generator project are welcome! If you find a bug or have an idea for an improvement, feel free to open an issue or submit a pull request.</p>
