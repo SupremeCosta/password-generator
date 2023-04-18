@@ -10,5 +10,20 @@ function writePassword() {
 
 }
 
+// Prompt the user for password criteria
+
+  
+// Define the sets of characters that can be used to build the password
+  
+
+// Define an array to hold all the possible characters that can be used to build the password
+
+
+// Generate the random password by selecting characters from the passwordChars array
+
+
+// Return the generated password
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
