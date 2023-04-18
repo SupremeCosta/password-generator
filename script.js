@@ -44,12 +44,18 @@ function generatePassword() {
   }
 
   // Generate the random password by selecting characters from the passwordChars array
+  var password = [];
 
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * passwordChars.length);
+    password.push(passwordChars[randomIndex]);
+  }
+
+  password = password.join("");
 
   // Return the generated password
 
-
-  // Add event listener to generate button
-
 }
+
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
