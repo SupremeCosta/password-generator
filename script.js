@@ -12,7 +12,11 @@ function writePassword() {
 
 function generatePassword() {
   // Prompt the user for password criteria
-  var passwordLength = prompt("How many characters would you like your password to be? (Please choose a number between 8 and 128)");
+  var passwordLength = parseInt(prompt("How many characters would you like your password to be? (Please choose a number between 8 and 128)"));
+  if (isNaN(passwordLength) || passwordLength < 8) {
+    alert("Invalid password length. Please enter a length of at least 8 characters.");
+    passwordLength = parseInt(prompt("Enter password length (minimum 8 characters):"));
+  }
   var includeLowercase = confirm("Would you like to include lowercase letters in your password?");
   var includeUppercase = confirm("Would you like to include uppercase letters in your password?");
   var includeNumbers = confirm("Would you like to include numbers in your password?");
