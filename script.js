@@ -25,7 +25,23 @@ function generatePassword() {
   var symbolChars = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "{", "}", "[", "]", "|", "\\", ":", ";", "\"", "'", "<", ">", ",", ".", "?", "/"];
 
   // Define an array to hold all the possible characters that can be used to build the password
+  var passwordChars = [];
 
+  if (includeLowercase) {
+    passwordChars = passwordChars.concat(lowercaseChars);
+  }
+
+  if (includeUppercase) {
+    passwordChars = passwordChars.concat(uppercaseChars);
+  }
+
+  if (includeNumbers) {
+    passwordChars = passwordChars.concat(numberChars);
+  }
+
+  if (includeSymbols) {
+    passwordChars = passwordChars.concat(symbolChars);
+  }
 
   // Generate the random password by selecting characters from the passwordChars array
 
